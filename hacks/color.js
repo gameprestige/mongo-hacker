@@ -15,7 +15,8 @@ __ansi = {
         yellow: '3',
         blue: '4',
         magenta: '5',
-        cyan: '6'
+        cyan: '6',
+        white: '7'
     }
 };
 
