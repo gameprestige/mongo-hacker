@@ -15,12 +15,7 @@ prompt = function() {
         };
     }
     var state = isMongos() ? '[mongos]' : rs_state;
-    var suffix = "";
 
-    if (hasPendingRemove()) {
-        suffix = "Confirm? "
-    }
-
-    return host + '(' + process + '-' + version + ')' + state + ' ' + db + '> ' + suffix;
+    return host + '(' + process + '-' + version + ')' + state + ' ' + db + '> ';
 };
 

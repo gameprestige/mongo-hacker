@@ -148,9 +148,3 @@ Aggregation Framework Helpers -- on collections
   - Group and Count: `gcount(group_field, filter)`
   - Group and Sum: `gsum(group_field, sum_field, filter)`
   - Group and Average: `gavg(group_field, avg_field, filter)`
-
-### API Modifications
-
-#### Confirm before do any real remove
-
-For safety reasons, the `remove()` on collections just saves arguments if affected rows are more than 1. User must use `confirm()` or `cancel()` to commit or cancel changes. It can avoid any unconscious mistake which can destroy all data without any notification.
